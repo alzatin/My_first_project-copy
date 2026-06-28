@@ -1,69 +1,99 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-1",
-    "name": "My_first_project-copy",
-    "topLevel": true,
-    "allAtoms": [
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-1",
+  "name": "My_first_project-copy",
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-2",
+      "ioValues": [
         {
-            "atomType": "Output",
-            "x": 0.98,
-            "y": 0.5,
-            "uniqueID": "id-2",
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": "__GEOMETRY_INPUT__"
-                }
-            ]
-        },
-        {
-            "atomType": "Rectangle",
-            "x": 0.4622067767158992,
-            "y": 0.47560975609756095,
-            "uniqueID": "id-3985",
-            "ioValues": [
-                {
-                    "name": "x length",
-                    "ioValue": 50
-                },
-                {
-                    "name": "y length",
-                    "ioValue": 10
-                }
-            ]
-        },
-        {
-            "atomType": "Extrude",
-            "x": 0.5855777584708949,
-            "y": 0.4847560975609756,
-            "uniqueID": "id-5211",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                    "name": "height",
-                    "ioValue": 10
-                }
-            ]
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
         }
-    ],
-    "allConnectors": [
+      ]
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.4622067767158992,
+      "y": 0.47560975609756095,
+      "uniqueID": "id-3985",
+      "ioValues": [
         {
-            "ap2Name": "geometry",
-            "ap1ID": "id-3985",
-            "ap2ID": "id-5211"
+          "name": "x length",
+          "ioValue": 50
         },
         {
-            "ap2Name": "number or geometry",
-            "ap1ID": "id-5211",
-            "ap2ID": "id-2"
+          "name": "y length",
+          "ioValue": 10
         }
-    ],
-    "unitsKey": "Inches",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.5855777584708949,
+      "y": 0.4847560975609756,
+      "uniqueID": "id-5211",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.6623815967523681,
+      "y": 0.7469512195121951,
+      "uniqueID": "id-5221",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "x-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 90,
+          "currentEquation": "90"
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 0
+        }
+      ]
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-3985",
+      "ap2ID": "id-5211"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-5211",
+      "ap2ID": "id-5221"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-5221",
+      "ap2ID": "id-2"
+    }
+  ],
+  "unitsKey": "Inches",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
