@@ -74,6 +74,22 @@
           "ioValue": 0
         }
       ]
+    },
+    {
+      "atomType": "Tag",
+      "x": 0.2868741542625169,
+      "y": 0.8109756097560976,
+      "uniqueID": "id-5228",
+      "name": "",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "tags": [
+        ""
+      ]
     }
   ],
   "allConnectors": [
